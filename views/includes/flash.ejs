@@ -1,0 +1,12 @@
+<%   if(success && success.length) { %> 
+<div class="alert alert-success alert-dismissable fade show col-6 offset-3" role="alert">
+    <%= success    %>              <%# For connect-flash %>
+    <button type="button" class="btn-close  offset-6 " data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% } %>
+
+
+
+
+<%# if statement show if only there is sucess there should a flash-message otherwise it would appear everytime on the website %>
+<%# success.length because success is flash message which is also an empty array therefore success.length %>
