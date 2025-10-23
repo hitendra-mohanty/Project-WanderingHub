@@ -1,5 +1,5 @@
-const Listing = require("../models/listing.js");
-const Review = require("../models/reviews.js");
+const Listing = require("./models/listing.js");
+const Review = require("./models/reviews.js");
 
 // Example of a proper isLoggedIn middleware
 module.exports.isLoggedIn = (req, res, next) => {
