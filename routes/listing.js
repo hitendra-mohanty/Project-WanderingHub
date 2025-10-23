@@ -24,7 +24,7 @@ const listingController = require("../controllers/listings.js");
 }
 // INDEX AND CREATE ROUTE
 router
-.route("/")
+.route("/listings")
 .get(wrapAsync(listingController.index))
 .post( isLoggedIn,upload.single("listing[image]"),validateListing,wrapAsync(listingController.createListing));
 
